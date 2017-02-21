@@ -18,4 +18,9 @@ public class Figura
     {
         return area;
     }
+    
+    public void CalculaArea()
+    {
+        System.out.println("ups...");
+    }
 }
