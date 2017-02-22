@@ -27,6 +27,10 @@ public class Principal
             System.out.println("El area de la figura es " + f.accedeArea());
         }
         
+        for(Figura f: arr)
+        {
+            System.out.println(f.dimeInfo());
+        }
         
        /* Figura [] arr = new Figura[3];
         arr [0] = new Triangulo(3,4);

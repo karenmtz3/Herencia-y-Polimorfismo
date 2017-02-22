@@ -18,4 +18,9 @@ public class Circulo extends Figura
     {
         area = (float)3.1416 * (radio * radio);
     }
+    
+    public String dimeInfo()
+    {
+        return "Circulo " + super.dimeInfo();
+    }
 }
