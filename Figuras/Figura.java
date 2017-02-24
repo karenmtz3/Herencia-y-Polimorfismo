@@ -24,13 +24,7 @@ public class Figura
         System.out.println("ups...");
     }
     
-    /*public String dimeInfo()
-    {
-        return "" + area;
-    }*/
-    
-    @Override
-    public String toString()
+    public String dimeInfo()
     {
         return "" + area;
     }
