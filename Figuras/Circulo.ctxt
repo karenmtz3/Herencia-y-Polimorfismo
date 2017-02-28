@@ -1,6 +1,4 @@
 #BlueJ class context
-comment0.params=r
-comment0.target=Circulo(float)
-comment1.params=
-comment1.target=void\ CalculaArea()
-numComments=2
+comment0.params=x\ y\ r
+comment0.target=Circulo(int,\ int,\ float)
+numComments=1

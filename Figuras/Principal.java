@@ -10,7 +10,13 @@ public class Principal
 {
     public static void main(String [] args)
     {
-        ArrayList<Figura> ArrayF;
+         Ventana vent = new Ventana(600,400);
+         vent.setVisible(true);
+        
+        
+        
+        
+       /* ArrayList<Figura> ArrayF;
         ArrayF = new ArrayList<Figura>();
         
         Iterator <Figura> it = ArrayF.iterator();
@@ -27,12 +33,12 @@ public class Principal
             System.out.println("El area de la figura es " + f.accedeArea());
         }
         
-        for(Figura f: arr)
+        /*for(Figura f: arr)
         {
             System.out.println(f.dimeInfo());
         }
         
-       /* Figura [] arr = new Figura[3];
+        Figura [] arr = new Figura[3];
         arr [0] = new Triangulo(3,4);
         arr [1] = new Cuadrado(5);
         arr [2] = new Circulo(3);

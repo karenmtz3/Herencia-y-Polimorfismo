@@ -7,14 +7,16 @@
  */
 public class Cuadrado extends Figura
 {
-    private float lado;
     
-    public Cuadrado(float l)
+   private float lado;
+    
+    public Cuadrado(int x, int y,float l)
     {
+        super(x,y);
         lado = l;
     }
     
-    public void CalculaArea()
+    /*public void CalculaArea()
     {
         area = lado * lado;
     }
@@ -22,5 +24,5 @@ public class Cuadrado extends Figura
     public String dimeInfo()
     {
         return "Cuadrado " + super.dimeInfo();
-    }
+    }*/
 }

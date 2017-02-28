@@ -7,7 +7,17 @@
  */
 public class Figura
 {
-    protected float area;
+    private int posx;
+    private int posy;
+    
+    public Figura(int x, int y)
+    {
+        posx = x;
+        posy = y;
+    }
+    
+    
+    /*protected float area;
     
     public Figura()
     {
@@ -27,7 +37,7 @@ public class Figura
     public String dimeInfo()
     {
         return "" + area;
-    }
+    }*/
     
     
 }

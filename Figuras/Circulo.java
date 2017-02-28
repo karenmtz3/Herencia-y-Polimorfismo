@@ -9,12 +9,13 @@ public class Circulo extends Figura
 {
     private float radio;
     
-    public Circulo(float r)
+    public Circulo(int x, int y,float r)
     {
+        super(x,y);
         radio = r;
     }
     
-    public void CalculaArea()
+   /* public void CalculaArea()
     {
         area = (float)3.1416 * (radio * radio);
     }
@@ -22,5 +23,5 @@ public class Circulo extends Figura
     public String dimeInfo()
     {
         return "Circulo " + super.dimeInfo();
-    }
+    }*/
 }
