@@ -1,11 +1,12 @@
-
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 /**
  * Write a description of class Figura here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Figura
+abstract public class Figura
 {
     private int posx;
     private int posy;
@@ -16,6 +17,17 @@ public class Figura
         posy = y;
     }
     
+    public int DevolverX()
+    {
+        return posx;
+    }
+    
+    public int DevolverY()
+    {
+        return posy;
+    }
+    
+    public abstract void dibuja(Graphics g); 
     
     /*protected float area;
     
