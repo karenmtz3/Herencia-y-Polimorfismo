@@ -19,4 +19,10 @@ public class Banco
    {
        Cuentas.add(c);
    }
+   
+   public float CalculaPromedio()
+   {
+       float s = 0;
+       return s;
+   }
 }

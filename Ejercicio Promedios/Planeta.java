@@ -19,4 +19,10 @@ public class Planeta
    {
        pais.add(p);
    }
+   
+   public float CalculaPromedio()
+   {
+       float s = 0;
+       return s;
+   }
 }

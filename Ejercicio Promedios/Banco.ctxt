@@ -3,4 +3,6 @@ comment0.params=
 comment0.target=Banco()
 comment1.params=c
 comment1.target=void\ AgregaCuenta(CuentaBancaria)
-numComments=2
+comment2.params=
+comment2.target=float\ CalculaPromedio()
+numComments=3
