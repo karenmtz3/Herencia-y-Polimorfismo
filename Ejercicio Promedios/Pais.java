@@ -5,9 +5,9 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Pais
+public class Pais implements Measurable
 {
-    private int hab;
+   private int hab;
      
    public Pais(int h)
    {
@@ -15,7 +15,7 @@ public class Pais
    }
    
    
-   public int DarHab()
+   public int obtenerMedida()
    {
        return hab;
    }

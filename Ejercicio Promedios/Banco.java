@@ -8,27 +8,15 @@ import java.util.Iterator;
  */
 public class Banco
 {
-   private ArrayList<CuentaBancaria> Coleccion;
+   private ArrayList<CuentaBancaria> Cuentas;
    
    public Banco()
    {
-       Coleccion = new ArrayList<CuentaBancaria>();
+       Cuentas = new ArrayList<CuentaBancaria>();
    }
    
    public void AgregaCuenta(CuentaBancaria c)
    {
-       Coleccion.add(c);
-   }
-   
-   public float CalculaSaldoProm()
-   {
-       float s=0;
-       Iterator<CuentaBancaria> it =  Coleccion.iterator();
-       while(it.hasNext())
-       {
-           CuentaBancaria col = it.next();
-           s += col.DarSaldo();
-       }
-       return (s/Coleccion.size());
+       Cuentas.add(c);
    }
 }

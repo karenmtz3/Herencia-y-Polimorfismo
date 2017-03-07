@@ -8,29 +8,15 @@ import java.util.Iterator;
  */
 public class Planeta
 {
-   private ArrayList<Pais> Coleccion;
+   private ArrayList<Pais> pais;
    
    public Planeta()
    {
-       Coleccion = new ArrayList<Pais>();
+       pais = new ArrayList<Pais>();
    }
    
    public void AddPais(Pais p)
    {
-       Coleccion.add(p);
+       pais.add(p);
    }
-   
-    public int CalculaHab()
-   {
-       int s=0;
-       Iterator<Pais> it =  Coleccion.iterator();
-       while(it.hasNext())
-       {
-           Pais col = it.next();
-           s += col.DarHab();
-       }
-       return (s/Coleccion.size());
-   }
-   
-   
 }

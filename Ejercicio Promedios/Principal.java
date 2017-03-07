@@ -11,23 +11,20 @@ public class Principal
     
    public static void main(String [] args)
    {
-      Banco b = new Banco();
-      CuentaBancaria b1 = new CuentaBancaria(100);
-      CuentaBancaria b2 = new CuentaBancaria(200);
-      CuentaBancaria b3 = new CuentaBancaria(300);
-      b.AgregaCuenta(b1);
-      b.AgregaCuenta(b2);
-      b.AgregaCuenta(b3);
+     Measurable[] acc = new Measurable[3];
+     acc[0] = new CuentaBancaria(100);
+     acc[1] = new CuentaBancaria(200);
+     acc[2] = new CuentaBancaria(300);
+     
+     float promSaldo = Utileria.CalculaPromedio(acc);
+     System.out.println("Promedio saldo: " + promSaldo);
       
-      Planeta p = new Planeta();
-      Pais p1 = new Pais(25);
-      Pais p2 = new Pais(32);
-      Pais p3 = new Pais(94);
-      p.AddPais(p1);
-      p.AddPais(p2);
-      p.AddPais(p3);
-      
-      System.out.println("Saldo Promedio = " + b.CalculaSaldoProm());
-      System.out.println("Promedio de habitantes= "+p.CalculaHab());
+     Measurable [] paises = new Measurable[3];
+     paises[0] = new Pais(25);
+     paises[1] = new Pais(32);
+     paises[2] = new Pais(94);
+     
+     float promHab = Utileria.CalculaPromedio(paises);
+     System.out.println("Promedio de habitantes: " + promHab);
    }
 }

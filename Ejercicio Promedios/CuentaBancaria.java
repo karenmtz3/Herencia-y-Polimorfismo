@@ -5,18 +5,18 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class CuentaBancaria
+public class CuentaBancaria implements Measurable
 {
    private int saldo;
    
-   public CuentaBancaria(int c)
+   public CuentaBancaria(int s)
    {
-       saldo = c;
+       saldo = s;
     }
    
-   public float DarSaldo()
+   public int obtenerMedida()
    {
-       return (float)saldo;
+       return saldo;
    }
 }
 
