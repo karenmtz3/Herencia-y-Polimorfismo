@@ -1,8 +1,6 @@
 import javax.swing.JPanel;
 import java.awt.Graphics;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.Timer;
+
 /**
  * Write a description of class Lienzo here.
  * 
@@ -16,20 +14,12 @@ public class Lienzo extends JPanel
     public Lienzo()
     {
         pelota = new Pelota(100,100,10);
-        EscuchadorTiempo escuchaTiempo = new EscuchadorTiempo();
-        Timer tiempo = new Timer(1000,escuchaTiempo);
-        tiempo.start();
     }
     
-    class EscuchadorTiempo implements ActionListener
+    public void actua()
     {
-        @Override
-        public void actionPerformed(ActionEvent e)
-        {
-            /*pelota.muevete() //cambia de posicion
-            this.repaint();
-            System.out.println("Hola Pelota c:");*/
-        }
+        pelota.muevete(this.getBounds());
+        this.repaint();
     }
     
     @Override
